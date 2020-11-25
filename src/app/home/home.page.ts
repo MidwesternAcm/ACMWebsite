@@ -1,5 +1,4 @@
-import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -8,13 +7,26 @@ import { Router } from '@angular/router';
 })
 export class HomePage {
 
-  constructor(
-    public router: Router
-  ) {
-  }
+  imagePanelSource1: string = "../../assets/images/picpanel01.jpg";
+  imagePanelSource2: string = "../../assets/images/picpanel02.jpg";
+  imagePanelCounter: number = 1;
+  firstPanel: boolean = false;
+  @ViewChild('pic1') picFrame1: HTMLImageElement;
+  @ViewChild('pic2') picFrame2: HTMLImageElement;
 
-  test(){
-    console.log("It worked");
+  constructor(
+  ) {}
+
+  ngOnInit() {
+    setInterval(() => {
+      this.imagePanelCounter = ((this.imagePanelCounter+ 1) % 8) + 1;
+      if(this.firstPanel){
+        this.imagePanelSource1 = "../../assets/images/picpanel0" + this.imagePanelCounter + ".jpg";
+      } else {
+        this.imagePanelSource2 = "../../assets/images/picpanel0" + this.imagePanelCounter + ".jpg";
+      }
+      this.firstPanel = !this.firstPanel;
+    }, 4000);
   }
 
 }

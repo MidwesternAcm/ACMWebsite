@@ -1,18 +1,8 @@
 <ion-header [translucent]="true">
-      <ul>
-        <li><a (click)="this.router.navigate(['./home'])">Midwestern State University ACM</a></li>
-        <li><a (click)="this.router.navigate(['./news'])">News</a></li>
-        <li><a (click)="this.router.navigate(['./contacts'])">Contact</a></li>
-      </ul>
+  <app-nav-bar></app-nav-bar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-  </div>
+<img id="picpanel1" class="imageDisapear" #pic1 src="{{imagePanelSource1}}">
+<img id="picpanel2" #pic2 src="{{imagePanelSource2}}">
 </ion-content>
