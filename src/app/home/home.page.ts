@@ -13,12 +13,14 @@ export class HomePage {
   firstPanel: boolean = false;
   @ViewChild('pic1') picFrame1: HTMLImageElement;
   @ViewChild('pic2') picFrame2: HTMLImageElement;
+  intervalRefernce;
 
   constructor(
   ) {}
 
-  ngOnInit() {
-    setInterval(() => {
+  ionViewWillEnter() {
+    this.firstPanel = false;
+    this.intervalRefernce = setInterval(() => {
       this.imagePanelCounter = ((this.imagePanelCounter+ 1) % 8) + 1;
       if(this.firstPanel){
         this.imagePanelSource1 = "../../assets/images/picpanel0" + this.imagePanelCounter + ".jpg";
@@ -26,7 +28,13 @@ export class HomePage {
         this.imagePanelSource2 = "../../assets/images/picpanel0" + this.imagePanelCounter + ".jpg";
       }
       this.firstPanel = !this.firstPanel;
+      console.log("change image thing");
     }, 4000);
+  }
+
+  ionViewWillLeave(){
+    clearInterval(this.intervalRefernce);
+    console.log("Interval cleared");
   }
 
 }

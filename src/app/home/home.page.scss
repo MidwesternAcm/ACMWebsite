@@ -1,6 +1,5 @@
 #container {
   text-align: center;
-
   position: absolute;
   left: 0;
   right: 0;
@@ -13,17 +12,20 @@
   line-height: 26px;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
 #container a {
   text-decoration: none;
+}
+
+h1{
+  text-align: center;
+}
+
+#welcomeText{
+  font-size: 50px;
+}
+
+p{
+  font-size: x-large;
 }
 
 @keyframes slopeUp {
@@ -62,4 +64,27 @@
   animation-name: slopedown;
   animation-duration: 8s;
   animation-iteration-count: infinite;
+}
+
+#titleSpan{
+  position: absolute;
+  top: 35%;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(49, 49, 49);
+  opacity: 80%;
+}
+
+#spanText{
+  color: aliceblue;
+  font-size: 50px;
+  line-height: 60px;
+}
+
+#primaryContent{
+  position: absolute;
+  top: 800px;
+  left: 15%;
+  width: 70%;
 }
