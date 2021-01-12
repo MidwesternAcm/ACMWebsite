@@ -19,6 +19,10 @@ const routes: Routes = [
     path: 'contacts',
     loadChildren: () => import('./contacts/contacts.module').then( m => m.ContactsPageModule)
   },
+  {
+    path: 'gamejam',
+    loadChildren: () => import('./gamejam/gamejam.module').then( m => m.GamejamPageModule)
+  },
 ];
 
 @NgModule({
