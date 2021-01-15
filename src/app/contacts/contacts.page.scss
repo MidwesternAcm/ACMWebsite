@@ -1,0 +1,44 @@
+ion-content{
+    --ion-background-color: rgb(116, 116, 116);
+}
+
+.contactBlock{
+    background-color: rgb(204, 204, 204);
+    border-radius: 35px;    
+    width: 25%;
+    border: 7px solid rgb(173, 173, 173);
+    margin-bottom: 30px;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: width;
+}
+
+ol{
+    list-style-type:none;
+}
+
+h1{
+    position: relative;
+    left: 25px;
+    width: 98%;
+    text-align: center;
+}
+
+h3{
+    position: relative;
+    left: 25px;
+    width: 98%;
+    text-align: center;
+}
+
+p{
+    position: relative;
+    left: 25px;
+    width: 98%;
+    text-align: center;
+}

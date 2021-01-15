@@ -1,0 +1,42 @@
+.newsItem{
+    background-color: rgb(204, 204, 204);
+    border-radius: 35px;
+    position: relative;
+    width: 60%;
+    left: 20%;
+    border: 7px solid rgb(173, 173, 173);
+    margin-bottom: 30px;
+}
+
+ol{
+    list-style-type:none;
+}
+
+h1{
+    position: relative;
+    left: 25px;
+    width: 98%;
+}
+
+h4{
+    position: relative;
+    left: 25px;
+    width: 98%;
+}
+
+p{
+    position: relative;
+    left: 25px;
+    width: 98%;
+}
+
+ion-content{
+    --ion-background-color: rgb(116, 116, 116);
+}
+
+#venmoQR{
+    position: relative;
+    left: 25px;
+    width: 20%;
+    height: 20%;
+}
