@@ -4,27 +4,39 @@
 
 <ion-content [fullscreen]="true">
 
-<!--These two panels are used for the picture swap on main page, effect is doine using interval and css keyframes-->
-<img id="picPanelBackground" src="../../assets/images/banner.jpg">
-<img id="picpanel1" class="imageDisapear" #pic1 src="{{imagePanelSource1}}">
-<img id="picpanel2" #pic2 src="{{imagePanelSource2}}">
+  <!--These two panels are used for the picture swap on main page, effect is doine using interval and css keyframes-->
+  <img id="picPanelBackground" src="../../assets/images/banner.jpg">
+  <img id="picpanel1" class="imageDisapear" #pic1 src="{{imagePanelSource1}}">
+  <img id="picpanel2" #pic2 src="{{imagePanelSource2}}">
 
-<!--The dim gray bar title across the image slideshow-->
-<div id="titleSpan">
-  <h1 id="spanText">Midwestern State University ACM</h1>
-</div>
+  <!--The dim gray bar title across the image slideshow-->
+  <div id="titleSpan">
+    <h1 id="spanText">Midwestern State University ACM</h1>
+  </div>
 
-<!--Actual text section of the page below the slideshow-->
-<div id="primaryContent">
-  <h1 id="welcomeText">Welcome!</h1>
-    <p> &nbsp;&nbsp;&nbsp;&nbsp; Welcome the the Midwestern State University Assocation for computing machinery's offical website. The National ACM Organzation brings together 
-      computing educators, researchers, and professionals to inspire dialogue, share resources, and address the field's challenges. As the world’s largest computing society, 
-      ACM strengthens the profession's collective voice through strong leadership, promotion of the highest standards, and recognition of technical excellence. ACM supports the 
-      professional growth of its members by providing opportunities for life‐long learning, career development, and professional networking.<br>
+  <!--Actual text section of the page below the slideshow-->
+  <div id="primaryContent">
+    <h1 id="welcomeText">Welcome!</h1>
+    <p> &nbsp;&nbsp;&nbsp;&nbsp; Welcome the the Midwestern State University Assocation for computing machinery's
+      offical website. The National ACM Organzation brings together computing educators, researchers, and professionals
+      to inspire dialogue, share resources, and address the field's challenges. As the world’s largest computing
+      society, ACM strengthens the profession's collective voice through strong leadership, promotion of the highest
+      standards, and recognition of technical excellence. ACM supports the professional growth of its members by
+      providing opportunities for life‐long learning, career development, and professional networking.<br>
 
-      Our local branch is made of members from the Midwestern State Computer Science department and lead by Dr.Terry Griffin. For news on upcoming events head over to the
-      News tab, to get ahold of the any of the executive members go to contacts. For any other questions please email our faculty leader Dr.griffin at terry.griffin@msutexas.edu 
+      Our local branch is made of members from the Midwestern State Computer Science department and lead by Dr.Terry
+      Griffin. For news on upcoming events head over to the News tab, to get ahold of the any of the executive members
+      go to contacts. For any other questions please email our faculty leader Dr.griffin at terry.griffin@msutexas.edu
     </p>
-</div>
+  </div>
+
+  <!--Sponsors Div-->
+  <div id="sponsors">
+    <h5>sponsors</h5>
+    <p>The following are the company's and organzations that help make acm's events possible:</p>
+    <a href="https://www.numerade.com/"><img id="numeradeLogo" src="../../assets/images/NumeradeLogo.png"></a>
+    <p id="numeradeText"> &nbsp; has textbook answer lesson videos taught by top educators
+      in subjects including calc, chemistry, physics, stats, economics, bio and so much more!</p>
+  </div>
 
 </ion-content>

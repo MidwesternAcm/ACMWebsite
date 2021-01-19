@@ -99,3 +99,23 @@ p{
   left: 15%;
   width: 70%;
 }
+
+#sponsors{
+  position: absolute;
+  top: 1300px;
+  --ion-background-color: rgb(138, 138, 138);
+}
+
+#sponsors p{
+  font-size: medium;
+}
+
+#numeradeLogo{
+  height: 35px;
+}
+
+#numeradeText{
+  float: right;
+  position: relative;
+  bottom: 5px;
+}
