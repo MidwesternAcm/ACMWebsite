@@ -102,12 +102,18 @@ p{
 
 #sponsors{
   position: absolute;
+  left: 15%;
+  width: 70%;
   top: 1300px;
   --ion-background-color: rgb(138, 138, 138);
 }
 
 #sponsors p{
   font-size: medium;
+}
+
+#sponsors h2{
+  font-size: xx-large;
 }
 
 #numeradeLogo{

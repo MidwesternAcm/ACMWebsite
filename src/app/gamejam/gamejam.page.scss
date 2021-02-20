@@ -1,0 +1,34 @@
+ion-content{
+    --ion-background-color: rgb(116, 116, 116);
+}
+
+#eventLogo{
+    position: relative;
+    width: 30%;
+    left: 35%;
+}
+
+.topicText{
+    text-align: center;
+}
+
+p{
+    width: 20%;
+}
+
+#what{
+    width: 60%;
+    position: relative;
+    left: 20%;
+}
+
+#what img{
+    position: relative;
+    height: 600px;
+}
+
+#what p{
+    margin-left: 50px;
+    margin-right: 50px;
+    float: left;
+}

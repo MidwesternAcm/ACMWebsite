@@ -21,5 +21,4 @@ export class NavBarComponent implements OnInit {
   nav(pageKey: string){
     this.navCtrl.navigateForward(pageKey,{animated: false});
   }
-
 }
