@@ -1,23 +1,23 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { NavBarComponent } from '../components/nav-bar/nav-bar.component';
 import { IonicModule } from '@ionic/angular';
 
 import { NewsPageRoutingModule } from './news-routing.module';
 
 import { NewsPage } from './news.page';
+import { SharedModule } from '../modules/shared/shared.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    NewsPageRoutingModule
+    NewsPageRoutingModule,
+    SharedModule
   ],
   declarations: [
-    NewsPage,
-    NavBarComponent
+    NewsPage
   ]
 })
 export class NewsPageModule {}
