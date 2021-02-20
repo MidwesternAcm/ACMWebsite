@@ -1,23 +1,23 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { NavBarComponent } from '../components/nav-bar/nav-bar.component';
 import { IonicModule } from '@ionic/angular';
 
 import { ContactsPageRoutingModule } from './contacts-routing.module';
 
 import { ContactsPage } from './contacts.page';
+import { SharedModule } from '../modules/shared/shared.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ContactsPageRoutingModule
+    ContactsPageRoutingModule,
+    SharedModule
   ],
   declarations: [
-    ContactsPage,
-    NavBarComponent
+    ContactsPage
   ]
 })
 export class ContactsPageModule {}

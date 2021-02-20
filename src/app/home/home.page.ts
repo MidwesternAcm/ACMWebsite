@@ -7,8 +7,8 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 })
 export class HomePage {
 
-  imagePanelSource1: string = "../../assets/images/picpanel01.jpg";
-  imagePanelSource2: string = "../../assets/images/picpanel02.jpg";
+  imagePanelSource1: string = "assets/images/picpanel01.jpg";
+  imagePanelSource2: string = "assets/images/picpanel02.jpg";
   imagePanelCounter: number = 1;
   firstPanel: boolean = false;
   @ViewChild('pic1') picFrame1: HTMLImageElement;
@@ -16,23 +16,23 @@ export class HomePage {
   intervalRefernce;
 
   constructor(
-  ) {}
+  ) { }
 
   ionViewWillEnter() {
     this.firstPanel = false;
     this.intervalRefernce = setInterval(() => {
-      this.imagePanelCounter = ((this.imagePanelCounter+ 1) % 8) + 1;
-      if(this.firstPanel){
-        this.imagePanelSource1 = "../../assets/images/picpanel0" + this.imagePanelCounter + ".jpg";
+      this.imagePanelCounter = this.imagePanelCounter % 8 + 1;
+      if (this.firstPanel) {
+        this.imagePanelSource1 = "assets/images/picpanel0" + this.imagePanelCounter + ".jpg";
       } else {
-        this.imagePanelSource2 = "../../assets/images/picpanel0" + this.imagePanelCounter + ".jpg";
+        this.imagePanelSource2 = "assets/images/picpanel0" + this.imagePanelCounter + ".jpg";
       }
       this.firstPanel = !this.firstPanel;
-      console.log("change image thing");
+      console.log(`Changed Image: ${this.imagePanelSource1}, ${this.imagePanelSource2}`);
     }, 4000);
   }
 
-  ionViewWillLeave(){
+  ionViewWillLeave() {
     clearInterval(this.intervalRefernce);
     console.log("Interval cleared");
   }
