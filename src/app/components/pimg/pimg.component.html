@@ -1,0 +1,9 @@
+<div id="outer" #outer>
+    <img *ngIf="!(stacked || flip)" [src]="src">
+    <!-- <p>{{text}}<ng-content select="tags"></ng-content></p> -->
+    <p>
+        {{text}}
+        <ng-content></ng-content>
+    </p>
+    <img *ngIf="stacked || flip" [src]="src">
+</div>

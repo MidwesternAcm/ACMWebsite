@@ -4,42 +4,132 @@
 
 <ion-content>
   <img id="eventLogo" src="../assets\images\gameJamLogo.png">
-  <div id="what">
-    <span>
-      <h1 class="topicText">What is a Game Jam?</h1>
-    </span>
-    <img src="../assets/images/thinkBulb.jpg">
+
+  <span>
+    <h1 class="topicText">What is a Game Jam?</h1>
+  </span>
+  <app-pimg src="../assets/images/thinkBulb.jpg">
+    A Game Jam is a (usually) brief competition in which programmers, artists, or just hobbyists of varying skill
+    levels make the best game they can within a limited time. Our game jam will be 54 hours or two and a quarter days.
+    Awards will be given out for design, technical prowess, overall game quality, and even just learning a whole lot
+    (this award involves writing an essay about everything you learned at and leading upto the game jam).
+  </app-pimg>
+
+  <span>
+    <h1 class="topicText">Who goes to Game Jam?</h1>
+  </span>
+  <app-pimg src="../assets/images/group-meeting.jpg" flip="true">
+    This 2 & 1/4 days game design competition is for everyone! We want to welcome participants even if they have no
+    coding background. Our goal is to educate participants while generating a fun and competitive atmosphere.
+    Volunteer helpers, with experience programming, will assist new designers with their projects.
+    You are welcome to participate in a team. However, to ensure a fair competition for solo developers team sizes are
+    limited to three. So, developers and artists, make friends. Take on the challenge together!
+  </app-pimg>
+
+  <span>
+    <h1 class="topicText">What will I need?</h1>
+  </span>
+  <app-pimg src="../assets/images/gdevelop.jpg">
+    You (or a member of your team) will need a device or devices to work on (laptop recommended) as well as some
+    engine of your choice to make your game with. For those with no coding experience, we recommend GDevelop. The
+    educational session a week before the competition will demonstrate this engine. For those with some coding
+    background who are new to game design, we recommend Phaser3, a Javascript game engine that is easy for beginners.
+  </app-pimg>
+
+  <span>
+    <h1 class="topicText">Let’s talk prizes…</h1>
+  </span>
+  <app-pimg src=" ../assets/images/prizes.jpg" flip="true">
+    There are 4 planned prizes<br><br>
+    <b>The Champion Award</b><br>
+    for the best overall Game Jam project.<br><br>
+    <b>The Designer Award</b><br>
+    for the best presentation elements in a Game Jam project. (art, sound, writing, etc)<br><br>
+    <b>The Engineer Award</b><br>
+    for the best code and general technical abipty found in a Game Jam project.<br><br>
+    <b>The Student Award</b><br>
+    for one amateur game maker who demonstrated impressive growth and learning at the Game Jam.
+  </app-pimg>
+
+  <h1 class="topicText">Current (tentative) Schedule</h1>
+
+  <div id="schedule">
+
+    <h3>Friday, March 19 @ 5PM:</h3>
     <p>
-      A Game Jam is a (usually) brief competition in which programmers, artists, or just hobbyists of varying skill
-      levels make the best game they can within a limited time. Our game jam will be 54 hours or two and a quarter days.
-      Awards will be given out for design, technical prowess, overall game quality, and even just learning a whole lot
-      (this award involves writing an essay about everything you learned at and leading upto the game jam).
+      Pre-Jam Meeting, discussion of rules and welcoming participants.
+    </p>
+
+    <h3>(same Day) @ 6PM:</h3>
+    <p>
+      Game Jam officially starts, participants have 54 hours to create their game.
+    </p>
+
+    <h3>Sunday, March 21 @ 12PM, Noon:</h3>
+    <p>
+      The college will start to be cleaned and closed up, participants still have until midnight to complete and submit their games but will have to finish last minutes tweeks either at the library or at home.
+    </p>
+
+    <h3>(Same Day) @ 12AM, Midnight:</h3>
+    <p>
+      Game Jam development time ends! Submissions must be made before this time.
+    </p>
+
+    <h3>Monday, March 22 @ 5PM:</h3>
+    <p>
+      Announcement of winners, awards, and hanging out with our fellow devs. Here we'll also show off people's games and they can talk about design choices and people can ask questions if they want if the creator
+      is confortable answering them.
     </p>
   </div>
-  <div>
-    <span>
-      <h1 class="topicText">Who goes to Game Jam?</h1>
-    </span>
-    <p>
-      This 2 & 1/4 days game design competition is for everyone! We want to welcome participants even if they have no
-      coding background. Our goal is to educate participants while generating a fun and competitive atmosphere.
-      Volunteer
-      helpers, with experience programming, will assist new designers with their projects.
-      You are welcome to participate in a team. However, to ensure a fair competition for solo developers team sizes are
-      limited to three. So, developers and artists, make friends. Take on the challenge together!
-    </p>
+
+  <h1 class="topicText" style="margin-bottom: 0px;">Get in Touch</h1>
+  <p>
+    MSU/ACM Amateur Game Jam <br>
+    (event being managed by ACM’s Web Master, Zachary Kingcade) <br>
+    zachkingcade@gmail.com <br>
+    or via Dr. Griffins slack channel ({{T}} Zachary Kingcade)
+  </p>
+
+  <h1 class="topicText" style="margin-top: 150px;">Examples and Previous submissions</h1>
+
+
+  <div class="gameItem">
+    <h4>Idle Pixels Example Game:</h4>
+    <ion-button color="success" (click)="openIdlePixels = !openIdlePixels">Try-In-Browser</ion-button>
+    <iframe [src]='openIdlePixels ? sanitizePath("../assets/games/idlePixels/index.html") : sanitizePath("")'
+      height="600" width="800" [hidden]="!openIdlePixels"></iframe>
   </div>
-  <div>
-    <span>
-      <h1 class="topicText">What will I need?</h1>
-    </span>
-    <p>
-      You (or a member of your team) will need a device or devices to work on (laptop recommended) as well as some
-      engine
-      of your choice to make your game with. For those with no coding experience, we recommend GDevelop. The educational
-      session a week before the competition will demonstrate this engine. For those with some coding background who are
-      new to game design, we recommend Phaser3, a Javascript game engine that is easy for beginners.
-    </p>
+
+  <div class="gameItem">
+    <h4>Previous year's winner of the Learner's Award (You Wake Up In A Cave):</h4>
+    <p>This game is a great example of a simple game made with <b>ZERO</b> coding using the Gdevelop visual engine</p>
+    <ion-button color="success" (click)="openCaveGame = !openCaveGame">Try-In-Browser</ion-button>
+    <iframe [src]='openCaveGame ? sanitizePath("../assets/games/youWakeUpInACave/index.html") : sanitizePath("")'
+      height="600" width="800" [hidden]="!openCaveGame"></iframe>
   </div>
-  <!--<iframe src="../assets/games/idlePixels/index.html" height="600" width="800"></iframe>-->
+
+  <div class="gameItem">
+    <h4>Previous year's winner of the Best Game Award (Cube Mayhem):</h4>
+    <iframe src="https://itch.io/embed/604023" height="200" width="552" frameborder="0"><a
+        href="https://dakotawilson.itch.io/cube-mayham">Cube Mayham by DakotaWilson</a></iframe>
+  </div>
+
+  <div class="gameItem">
+    <h4>Previous year's winner of the Engineer's Award (Secret Necromancer):</h4>
+    <iframe src="https://itch.io/embed/604170" height="200" width="552" frameborder="0"><a
+        href="https://jeremyglebe.itch.io/secret-necromancer">Secret Necromancer by jeremyglebe,
+        Zachkingcade</a></iframe>
+  </div>
+
+  <div class="gameItem">
+    <h4>Previous year's winner of the Designer's Award (M-U-SEE-UM):</h4>
+    <iframe src="https://itch.io/embed/604124" height="200" width="552" frameborder="0"><a
+        href="https://pirho-omega.itch.io/m-u-see-um">M-U-SEE-UM by Pirho_Omega</a></iframe>
+  </div>
+
+  <div class="gameItem">
+    <h4>Previous year's winner of the Popularity Award (Corona Defense):</h4>
+    <iframe src="https://itch.io/embed/604172" height="200" width="552" frameborder="0"><a
+        href="https://jeesuschrist.itch.io/corona-defense">Corona Defense by JeesusChrist</a></iframe>
+  </div>
 </ion-content>

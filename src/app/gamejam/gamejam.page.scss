@@ -2,33 +2,57 @@ ion-content{
     --ion-background-color: rgb(116, 116, 116);
 }
 
+p{
+    text-align: center;
+    width: 35%;
+    margin: auto;
+}
+
 #eventLogo{
     position: relative;
     width: 30%;
     left: 35%;
+    margin-bottom: 150px;
 }
 
 .topicText{
     text-align: center;
+    margin-bottom: 50px;
+    font-weight: bolder;
 }
 
-p{
-    width: 20%;
+#schedule{
+    margin-bottom: 200px;
+    h3{
+        font-weight: bold;
+        text-align: center;
+    }
+    p{
+        text-align: center;
+        width: 35%;
+        margin: auto;
+    }
 }
 
-#what{
-    width: 60%;
-    position: relative;
-    left: 20%;
+.inBrowserGameDiv{
+    ion-button{
+        margin: auto;
+    }
 }
 
-#what img{
-    position: relative;
-    height: 600px;
-}
-
-#what p{
-    margin-left: 50px;
-    margin-right: 50px;
-    float: left;
+.gameItem{
+    margin-bottom: 100px;
+    iframe{
+        display: block;
+        margin: auto;
+    }
+    h4{
+        text-align: center;
+        font-weight: bolder;
+    }
+    ion-button{
+        display: block;
+        margin: auto;
+        width: 30%;
+    }
 }
