@@ -14,7 +14,7 @@ export class PimgComponent {
     @Input() flip: boolean = false; // when horizontal, flip order; default is <img><p>, flipped is <p><img>
 
     // Whether or not the image and p tag should be stacked
-    private stacked: boolean;
+    public stacked: boolean;
 
     constructor(private platform: Platform) {
         this.stacked = this.platform.width() / this.platform.height() < 3 / 4;

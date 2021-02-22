@@ -3,12 +3,12 @@
 </ion-header>
 
 <ion-content>
-  <img id="eventLogo" src="../assets\images\gameJamLogo.png">
+  <img id="eventLogo" src="assets\images\gameJamLogo.png">
 
   <span>
     <h1 class="topicText">What is a Game Jam?</h1>
   </span>
-  <app-pimg src="../assets/images/thinkBulb.jpg">
+  <app-pimg src="assets/images/thinkBulb.jpg">
     A Game Jam is a (usually) brief competition in which programmers, artists, or just hobbyists of varying skill
     levels make the best game they can within a limited time. Our game jam will be 54 hours or two and a quarter days.
     Awards will be given out for design, technical prowess, overall game quality, and even just learning a whole lot
@@ -18,7 +18,7 @@
   <span>
     <h1 class="topicText">Who goes to Game Jam?</h1>
   </span>
-  <app-pimg src="../assets/images/group-meeting.jpg" flip="true">
+  <app-pimg src="assets/images/group-meeting.jpg" flip="true">
     This 2 & 1/4 days game design competition is for everyone! We want to welcome participants even if they have no
     coding background. Our goal is to educate participants while generating a fun and competitive atmosphere.
     Volunteer helpers, with experience programming, will assist new designers with their projects.
@@ -29,7 +29,7 @@
   <span>
     <h1 class="topicText">What will I need?</h1>
   </span>
-  <app-pimg src="../assets/images/gdevelop.jpg">
+  <app-pimg src="assets/images/gdevelop.jpg">
     You (or a member of your team) will need a device or devices to work on (laptop recommended) as well as some
     engine of your choice to make your game with. For those with no coding experience, we recommend GDevelop. The
     educational session a week before the competition will demonstrate this engine. For those with some coding
@@ -39,7 +39,7 @@
   <span>
     <h1 class="topicText">Let’s talk prizes…</h1>
   </span>
-  <app-pimg src=" ../assets/images/prizes.jpg" flip="true">
+  <app-pimg src="assets/images/prizes.jpg" flip="true">
     There are 4 planned prizes<br><br>
     <b>The Champion Award</b><br>
     for the best overall Game Jam project.<br><br>
@@ -87,7 +87,7 @@
     MSU/ACM Amateur Game Jam <br>
     (event being managed by ACM’s Web Master, Zachary Kingcade) <br>
     zachkingcade@gmail.com <br>
-    or via Dr. Griffins slack channel ({{T}} Zachary Kingcade)
+    or via Dr. Griffins slack channel (Zachary Kingcade)
   </p>
 
   <h1 class="topicText" style="margin-top: 150px;">Examples and Previous submissions</h1>
@@ -96,7 +96,7 @@
   <div class="gameItem">
     <h4>Idle Pixels Example Game:</h4>
     <ion-button color="success" (click)="openIdlePixels = !openIdlePixels">Try-In-Browser</ion-button>
-    <iframe [src]='openIdlePixels ? sanitizePath("../assets/games/idlePixels/index.html") : sanitizePath("")'
+    <iframe [src]='openIdlePixels ? sanitizePath("assets/games/idlePixels/index.html") : sanitizePath("")'
       height="600" width="800" [hidden]="!openIdlePixels"></iframe>
   </div>
 
@@ -104,7 +104,7 @@
     <h4>Previous year's winner of the Learner's Award (You Wake Up In A Cave):</h4>
     <p>This game is a great example of a simple game made with <b>ZERO</b> coding using the Gdevelop visual engine</p>
     <ion-button color="success" (click)="openCaveGame = !openCaveGame">Try-In-Browser</ion-button>
-    <iframe [src]='openCaveGame ? sanitizePath("../assets/games/youWakeUpInACave/index.html") : sanitizePath("")'
+    <iframe [src]='openCaveGame ? sanitizePath("assets/games/youWakeUpInACave/index.html") : sanitizePath("")'
       height="600" width="800" [hidden]="!openCaveGame"></iframe>
   </div>
 

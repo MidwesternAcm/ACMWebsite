@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
+import { IonSlide, IonSlides } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -6,19 +7,21 @@ import { Component, OnInit, ViewChild } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  // Reference to the first element matching the selector
+  @ViewChild('slides') slideElement: IonSlides;
 
-  imagePanelSource1: string = "assets/images/picpanel01.jpg";
-  imagePanelSource2: string = "assets/images/picpanel02.jpg";
-  imagePanelCounter: number = 1;
-  firstPanel: boolean = false;
-  @ViewChild('pic1') picFrame1: HTMLImageElement;
-  @ViewChild('pic2') picFrame2: HTMLImageElement;
-  intervalRefernce;
+  index: number;
 
   constructor(
-  ) { }
+  ) {
+    this.index = 0;
+  }
 
   ionViewWillEnter() {
+    setInterval(() => {
+      this.index = (this.index + 1) % 5;
+      this.slideElement.slideTo(this.index);
+    }, 4000)
   }
 
   ionViewWillLeave() {
