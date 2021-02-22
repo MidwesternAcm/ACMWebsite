@@ -19,22 +19,9 @@ export class HomePage {
   ) { }
 
   ionViewWillEnter() {
-    this.firstPanel = false;
-    this.intervalRefernce = setInterval(() => {
-      this.imagePanelCounter = this.imagePanelCounter % 8 + 1;
-      if (this.firstPanel) {
-        this.imagePanelSource1 = "assets/images/picpanel0" + this.imagePanelCounter + ".jpg";
-      } else {
-        this.imagePanelSource2 = "assets/images/picpanel0" + this.imagePanelCounter + ".jpg";
-      }
-      this.firstPanel = !this.firstPanel;
-      console.log(`Changed Image: ${this.imagePanelSource1}, ${this.imagePanelSource2}`);
-    }, 4000);
   }
 
   ionViewWillLeave() {
-    clearInterval(this.intervalRefernce);
-    console.log("Interval cleared");
   }
 
 }

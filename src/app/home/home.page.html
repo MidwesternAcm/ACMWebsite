@@ -1,13 +1,20 @@
-<ion-header [translucent]="true">
+<ion-header>
   <app-nav-bar></app-nav-bar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content>
 
-  <!--These two panels are used for the picture swap on main page, effect is doine using interval and css keyframes-->
-  <img id="picPanelBackground" src="assets/images/banner.jpg">
-  <img id="picpanel1" class="imageDisapear" #pic1 src="{{imagePanelSource1}}">
-  <img id="picpanel2" #pic2 src="{{imagePanelSource2}}">
+  <div id="slideshow" background>
+    <ion-slides>
+    <ion-slide><img src="assets/images/picpanel01.jpg"></ion-slide>
+    <ion-slide><img src="assets/images/picpanel02.jpg"></ion-slide>
+    <ion-slide><img src="assets/images/picpanel03.jpg"></ion-slide>
+    <ion-slide><img src="assets/images/picpanel05.jpg"></ion-slide>
+    <ion-slide><img src="assets/images/picpanel06.jpg"></ion-slide>
+    <ion-slide><img src="assets/images/picpanel08.jpg"></ion-slide>
+    </ion-slides>
+  </div>
+  <!--<img id="picPanelBackground" src="assets/images/banner.jpg">-->
 
   <!--The dim gray bar title across the image slideshow-->
   <div id="titleSpan">
